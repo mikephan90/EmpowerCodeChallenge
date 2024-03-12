@@ -10,8 +10,8 @@ import UIKit
 class AdditionalInfoViewController: UIViewController {
     
     // MARK: - Properties
-    
-    var beneficiary: Beneficiary
+
+    private let viewModel: AdditionalInfoViewModel
     
     // MARK: - Views
     
@@ -85,10 +85,10 @@ class AdditionalInfoViewController: UIViewController {
     
     // MARK: - Inits
     
-    init(viewModel: Beneficiary) {
-        self.beneficiary = viewModel
-        super.init(nibName: nil, bundle: nil)
-    }
+    init(viewModel: AdditionalInfoViewModel) {
+            self.viewModel = viewModel
+            super.init(nibName: nil, bundle: nil)
+        }
     
     required init?(coder: NSCoder) {
         fatalError()
@@ -141,14 +141,14 @@ class AdditionalInfoViewController: UIViewController {
     
     // MARK: - Helpers
     
-    public func addTitleLabel(with title: String) {
+    private func addTitleLabel(with title: String) {
         let titleLabel = UILabel()
         titleLabel.font = UIFont.boldSystemFont(ofSize: 17)
         titleLabel.text = title
         stackView.addArrangedSubview(titleLabel)
     }
     
-    public func addDataLabel(label: UILabel) {
+    private func addDataLabel(label: UILabel) {
         label.numberOfLines = 0
         stackView.addArrangedSubview(label)
         
@@ -158,7 +158,6 @@ class AdditionalInfoViewController: UIViewController {
         NSLayoutConstraint.activate([spacingView.heightAnchor.constraint(equalToConstant: 4)])
         stackView.addArrangedSubview(spacingView)
     }
-    
     
     /// Create title, data pairs to display information
     private func createInfoViews() {
@@ -199,30 +198,22 @@ class AdditionalInfoViewController: UIViewController {
     
     /// Populate data from the dependency injected data
     private func populateData() {
-        guard let designationCode = designationMap[beneficiary.designationCode] else { return }
-        guard let dateOfBirth = convertDateFormat(beneficiary.dateOfBirth) else { return }
-        let phoneNumber = formatPhoneNumber(beneficiary.phoneNumber)
-        if beneficiary.middleName != nil {
-            nameLabel.text = "\(beneficiary.firstName) \(beneficiary.middleName ?? "") \(beneficiary.lastName)"
-        } else {
-            nameLabel.text = "\(beneficiary.firstName) \(beneficiary.lastName)"
-        }
-        
-        designationLabel.text = designationCode
-        beneficiaryTypeLabel.text = beneficiary.beneType
-        ssnLabel.text = beneficiary.socialSecurityNumber
-        dateOfBirthLabel.text = dateOfBirth
-        phoneNumberLabel.text = phoneNumber
-        firstLineAddressLabel.text = beneficiary.beneficiaryAddress.firstLineMailing
-        cityLabel.text = beneficiary.beneficiaryAddress.city
-        zipCodeLabel.text = beneficiary.beneficiaryAddress.zipCode
-        stateCodeLabel.text = beneficiary.beneficiaryAddress.stateCode
-        countryLabel.text = beneficiary.beneficiaryAddress.country
+        nameLabel.text = viewModel.nameLabel
+        designationLabel.text = viewModel.designationLabel
+        beneficiaryTypeLabel.text = viewModel.beneficiary.beneType
+        ssnLabel.text = viewModel.beneficiary.socialSecurityNumber
+        dateOfBirthLabel.text = viewModel.dateOfBirth
+        phoneNumberLabel.text = viewModel.phoneNumber
+        firstLineAddressLabel.text = viewModel.beneficiary.beneficiaryAddress.firstLineMailing
+        cityLabel.text = viewModel.beneficiary.beneficiaryAddress.city
+        zipCodeLabel.text = viewModel.beneficiary.beneficiaryAddress.zipCode
+        stateCodeLabel.text = viewModel.beneficiary.beneficiaryAddress.stateCode
+        countryLabel.text = viewModel.beneficiary.beneficiaryAddress.country
     }
     
     /// Helper function to display a second address line - if it does not exist, don't render this at all
     private func checkSecondaryAddressLine() {
-        if let secondaryAddressLine = beneficiary.beneficiaryAddress.scndLineMailing {
+        if let secondaryAddressLine = viewModel.beneficiary.beneficiaryAddress.scndLineMailing {
             addDataLabel(label: secondLineAddressLabel)
             secondLineAddressLabel.text = "\(secondaryAddressLine)"
         }

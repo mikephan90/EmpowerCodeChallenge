@@ -23,6 +23,8 @@
 		B1D76AAF2BA01FD400C8FA8E /* MainDataCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76AAE2BA01FD400C8FA8E /* MainDataCellTests.swift */; };
 		B1D76AB12BA022E800C8FA8E /* AdditionalInformationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76AB02BA022E700C8FA8E /* AdditionalInformationViewControllerTests.swift */; };
 		B1D76AB32BA02ACF00C8FA8E /* DataTransformersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76AB22BA02ACF00C8FA8E /* DataTransformersTests.swift */; };
+		B1D76AB52BA02E5A00C8FA8E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76AB42BA02E5A00C8FA8E /* InfoView.swift */; };
+		B1D76AB72BA02F3E00C8FA8E /* AdditionalInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76AB62BA02F3E00C8FA8E /* AdditionalInformationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		B1D76AAE2BA01FD400C8FA8E /* MainDataCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataCellTests.swift; sourceTree = "<group>"; };
 		B1D76AB02BA022E700C8FA8E /* AdditionalInformationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInformationViewControllerTests.swift; sourceTree = "<group>"; };
 		B1D76AB22BA02ACF00C8FA8E /* DataTransformersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransformersTests.swift; sourceTree = "<group>"; };
+		B1D76AB42BA02E5A00C8FA8E /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		B1D76AB62BA02F3E00C8FA8E /* AdditionalInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInformationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 			children = (
 				B1D76A642B9F91B900C8FA8E /* LaunchScreen.storyboard */,
 				B1D76A952B9FE75C00C8FA8E /* MainDataCell.swift */,
+				B1D76AB42BA02E5A00C8FA8E /* InfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B1D76A9E2B9FFD5600C8FA8E /* HomeViewModel.swift */,
+				B1D76AB62BA02F3E00C8FA8E /* AdditionalInformationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -303,8 +309,10 @@
 				B1D76A962B9FE75C00C8FA8E /* MainDataCell.swift in Sources */,
 				B1D76A9F2B9FFD5600C8FA8E /* HomeViewModel.swift in Sources */,
 				B1D76A5C2B9F91B800C8FA8E /* SceneDelegate.swift in Sources */,
+				B1D76AB72BA02F3E00C8FA8E /* AdditionalInformationViewModel.swift in Sources */,
 				B1D76AAA2BA0116900C8FA8E /* DataTransformers.swift in Sources */,
 				B1D76A9B2B9FEEAD00C8FA8E /* Beneficiary.swift in Sources */,
+				B1D76AB52BA02E5A00C8FA8E /* InfoView.swift in Sources */,
 				B1D76AA52BA005E000C8FA8E /* AdditionalInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

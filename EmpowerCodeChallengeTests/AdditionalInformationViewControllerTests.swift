@@ -32,7 +32,9 @@ final class AdditionalInfoViewControllerTests: XCTestCase {
                 stateCode: "NY",
                 country: "US"
             ))
-        viewController = AdditionalInfoViewController(viewModel: beneficiary)
+        
+        let viewModel = AdditionalInfoViewModel(beneficiary: beneficiary)
+        viewController = AdditionalInfoViewController(viewModel: viewModel)
     }
 
     override func tearDownWithError() throws {
