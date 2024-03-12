@@ -9,24 +9,24 @@
 /* Begin PBXBuildFile section */
 		B1D76A5A2B9F91B800C8FA8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76A592B9F91B800C8FA8E /* AppDelegate.swift */; };
 		B1D76A5C2B9F91B800C8FA8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76A5B2B9F91B800C8FA8E /* SceneDelegate.swift */; };
-		B1D76A5E2B9F91B800C8FA8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76A5D2B9F91B800C8FA8E /* ViewController.swift */; };
-		B1D76A612B9F91B800C8FA8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D76A5F2B9F91B800C8FA8E /* Main.storyboard */; };
+		B1D76A5E2B9F91B800C8FA8E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76A5D2B9F91B800C8FA8E /* HomeViewController.swift */; };
 		B1D76A632B9F91B900C8FA8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D76A622B9F91B900C8FA8E /* Assets.xcassets */; };
 		B1D76A662B9F91B900C8FA8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D76A642B9F91B900C8FA8E /* LaunchScreen.storyboard */; };
-		B1D76A712B9F91B900C8FA8E /* EmpowerCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76A702B9F91B900C8FA8E /* EmpowerCodeChallengeTests.swift */; };
-		B1D76A7B2B9F91B900C8FA8E /* EmpowerCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76A7A2B9F91B900C8FA8E /* EmpowerCodeChallengeUITests.swift */; };
-		B1D76A7D2B9F91B900C8FA8E /* EmpowerCodeChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76A7C2B9F91B900C8FA8E /* EmpowerCodeChallengeUITestsLaunchTests.swift */; };
+		B1D76A712B9F91B900C8FA8E /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76A702B9F91B900C8FA8E /* HomeViewModelTests.swift */; };
+		B1D76A922B9FE63600C8FA8E /* Beneficiaries.json in Resources */ = {isa = PBXBuildFile; fileRef = B1D76A912B9FE63600C8FA8E /* Beneficiaries.json */; };
+		B1D76A962B9FE75C00C8FA8E /* MainDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76A952B9FE75C00C8FA8E /* MainDataCell.swift */; };
+		B1D76A9B2B9FEEAD00C8FA8E /* Beneficiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76A9A2B9FEEAD00C8FA8E /* Beneficiary.swift */; };
+		B1D76A9F2B9FFD5600C8FA8E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76A9E2B9FFD5600C8FA8E /* HomeViewModel.swift */; };
+		B1D76AA52BA005E000C8FA8E /* AdditionalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76AA42BA005E000C8FA8E /* AdditionalInfoViewController.swift */; };
+		B1D76AAA2BA0116900C8FA8E /* DataTransformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76AA92BA0116900C8FA8E /* DataTransformers.swift */; };
+		B1D76AAD2BA01C4600C8FA8E /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76AAC2BA01C4600C8FA8E /* CustomLabel.swift */; };
+		B1D76AAF2BA01FD400C8FA8E /* MainDataCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76AAE2BA01FD400C8FA8E /* MainDataCellTests.swift */; };
+		B1D76AB12BA022E800C8FA8E /* AdditionalInformationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76AB02BA022E700C8FA8E /* AdditionalInformationViewControllerTests.swift */; };
+		B1D76AB32BA02ACF00C8FA8E /* DataTransformersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D76AB22BA02ACF00C8FA8E /* DataTransformersTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B1D76A6D2B9F91B900C8FA8E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B1D76A4E2B9F91B800C8FA8E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B1D76A552B9F91B800C8FA8E;
-			remoteInfo = EmpowerCodeChallenge;
-		};
-		B1D76A772B9F91B900C8FA8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B1D76A4E2B9F91B800C8FA8E /* Project object */;
 			proxyType = 1;
@@ -39,16 +39,22 @@
 		B1D76A562B9F91B800C8FA8E /* EmpowerCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmpowerCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D76A592B9F91B800C8FA8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1D76A5B2B9F91B800C8FA8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B1D76A5D2B9F91B800C8FA8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B1D76A602B9F91B800C8FA8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1D76A5D2B9F91B800C8FA8E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B1D76A622B9F91B900C8FA8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1D76A652B9F91B900C8FA8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1D76A672B9F91B900C8FA8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1D76A6C2B9F91B900C8FA8E /* EmpowerCodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmpowerCodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1D76A702B9F91B900C8FA8E /* EmpowerCodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpowerCodeChallengeTests.swift; sourceTree = "<group>"; };
-		B1D76A762B9F91B900C8FA8E /* EmpowerCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmpowerCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1D76A7A2B9F91B900C8FA8E /* EmpowerCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpowerCodeChallengeUITests.swift; sourceTree = "<group>"; };
-		B1D76A7C2B9F91B900C8FA8E /* EmpowerCodeChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpowerCodeChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1D76A702B9F91B900C8FA8E /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		B1D76A912B9FE63600C8FA8E /* Beneficiaries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Beneficiaries.json; sourceTree = "<group>"; };
+		B1D76A952B9FE75C00C8FA8E /* MainDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataCell.swift; sourceTree = "<group>"; };
+		B1D76A9A2B9FEEAD00C8FA8E /* Beneficiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beneficiary.swift; sourceTree = "<group>"; };
+		B1D76A9E2B9FFD5600C8FA8E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B1D76AA42BA005E000C8FA8E /* AdditionalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfoViewController.swift; sourceTree = "<group>"; };
+		B1D76AA92BA0116900C8FA8E /* DataTransformers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransformers.swift; sourceTree = "<group>"; };
+		B1D76AAC2BA01C4600C8FA8E /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		B1D76AAE2BA01FD400C8FA8E /* MainDataCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataCellTests.swift; sourceTree = "<group>"; };
+		B1D76AB02BA022E700C8FA8E /* AdditionalInformationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInformationViewControllerTests.swift; sourceTree = "<group>"; };
+		B1D76AB22BA02ACF00C8FA8E /* DataTransformersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransformersTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +72,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1D76A732B9F91B900C8FA8E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +80,6 @@
 			children = (
 				B1D76A582B9F91B800C8FA8E /* EmpowerCodeChallenge */,
 				B1D76A6F2B9F91B900C8FA8E /* EmpowerCodeChallengeTests */,
-				B1D76A792B9F91B900C8FA8E /* EmpowerCodeChallengeUITests */,
 				B1D76A572B9F91B800C8FA8E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +89,6 @@
 			children = (
 				B1D76A562B9F91B800C8FA8E /* EmpowerCodeChallenge.app */,
 				B1D76A6C2B9F91B900C8FA8E /* EmpowerCodeChallengeTests.xctest */,
-				B1D76A762B9F91B900C8FA8E /* EmpowerCodeChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,12 +96,10 @@
 		B1D76A582B9F91B800C8FA8E /* EmpowerCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				B1D76A592B9F91B800C8FA8E /* AppDelegate.swift */,
-				B1D76A5B2B9F91B800C8FA8E /* SceneDelegate.swift */,
-				B1D76A5D2B9F91B800C8FA8E /* ViewController.swift */,
-				B1D76A5F2B9F91B800C8FA8E /* Main.storyboard */,
-				B1D76A622B9F91B900C8FA8E /* Assets.xcassets */,
-				B1D76A642B9F91B900C8FA8E /* LaunchScreen.storyboard */,
+				B1D76A8C2B9F94F600C8FA8E /* Resources */,
+				B1D76A892B9F94CB00C8FA8E /* Core */,
+				B1D76AA82BA0115B00C8FA8E /* Utils */,
+				B1D76A8E2B9FE5EA00C8FA8E /* Service */,
 				B1D76A672B9F91B900C8FA8E /* Info.plist */,
 			);
 			path = EmpowerCodeChallenge;
@@ -113,18 +108,92 @@
 		B1D76A6F2B9F91B900C8FA8E /* EmpowerCodeChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				B1D76A702B9F91B900C8FA8E /* EmpowerCodeChallengeTests.swift */,
+				B1D76A702B9F91B900C8FA8E /* HomeViewModelTests.swift */,
+				B1D76AAE2BA01FD400C8FA8E /* MainDataCellTests.swift */,
+				B1D76AB02BA022E700C8FA8E /* AdditionalInformationViewControllerTests.swift */,
+				B1D76AB22BA02ACF00C8FA8E /* DataTransformersTests.swift */,
 			);
 			path = EmpowerCodeChallengeTests;
 			sourceTree = "<group>";
 		};
-		B1D76A792B9F91B900C8FA8E /* EmpowerCodeChallengeUITests */ = {
+		B1D76A892B9F94CB00C8FA8E /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				B1D76A7A2B9F91B900C8FA8E /* EmpowerCodeChallengeUITests.swift */,
-				B1D76A7C2B9F91B900C8FA8E /* EmpowerCodeChallengeUITestsLaunchTests.swift */,
+				B1D76AAB2BA01C3B00C8FA8E /* Components */,
+				B1D76A992B9FEE9F00C8FA8E /* Model */,
+				B1D76A8D2B9F951500C8FA8E /* Controller */,
+				B1D76A8A2B9F94D800C8FA8E /* Views */,
+				B1D76A8B2B9F94E600C8FA8E /* ViewModel */,
 			);
-			path = EmpowerCodeChallengeUITests;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B1D76A8A2B9F94D800C8FA8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1D76A642B9F91B900C8FA8E /* LaunchScreen.storyboard */,
+				B1D76A952B9FE75C00C8FA8E /* MainDataCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1D76A8B2B9F94E600C8FA8E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B1D76A9E2B9FFD5600C8FA8E /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B1D76A8C2B9F94F600C8FA8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1D76A622B9F91B900C8FA8E /* Assets.xcassets */,
+				B1D76A592B9F91B800C8FA8E /* AppDelegate.swift */,
+				B1D76A5B2B9F91B800C8FA8E /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B1D76A8D2B9F951500C8FA8E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B1D76A5D2B9F91B800C8FA8E /* HomeViewController.swift */,
+				B1D76AA42BA005E000C8FA8E /* AdditionalInfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B1D76A8E2B9FE5EA00C8FA8E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B1D76A912B9FE63600C8FA8E /* Beneficiaries.json */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B1D76A992B9FEE9F00C8FA8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1D76A9A2B9FEEAD00C8FA8E /* Beneficiary.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1D76AA82BA0115B00C8FA8E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B1D76AA92BA0116900C8FA8E /* DataTransformers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B1D76AAB2BA01C3B00C8FA8E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B1D76AAC2BA01C4600C8FA8E /* CustomLabel.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +234,6 @@
 			productReference = B1D76A6C2B9F91B900C8FA8E /* EmpowerCodeChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B1D76A752B9F91B900C8FA8E /* EmpowerCodeChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B1D76A862B9F91B900C8FA8E /* Build configuration list for PBXNativeTarget "EmpowerCodeChallengeUITests" */;
-			buildPhases = (
-				B1D76A722B9F91B900C8FA8E /* Sources */,
-				B1D76A732B9F91B900C8FA8E /* Frameworks */,
-				B1D76A742B9F91B900C8FA8E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B1D76A782B9F91B900C8FA8E /* PBXTargetDependency */,
-			);
-			name = EmpowerCodeChallengeUITests;
-			productName = EmpowerCodeChallengeUITests;
-			productReference = B1D76A762B9F91B900C8FA8E /* EmpowerCodeChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +248,6 @@
 						CreatedOnToolsVersion = 15.2;
 					};
 					B1D76A6B2B9F91B900C8FA8E = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = B1D76A552B9F91B800C8FA8E;
-					};
-					B1D76A752B9F91B900C8FA8E = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = B1D76A552B9F91B800C8FA8E;
 					};
@@ -221,7 +268,6 @@
 			targets = (
 				B1D76A552B9F91B800C8FA8E /* EmpowerCodeChallenge */,
 				B1D76A6B2B9F91B900C8FA8E /* EmpowerCodeChallengeTests */,
-				B1D76A752B9F91B900C8FA8E /* EmpowerCodeChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,18 +279,11 @@
 			files = (
 				B1D76A662B9F91B900C8FA8E /* LaunchScreen.storyboard in Resources */,
 				B1D76A632B9F91B900C8FA8E /* Assets.xcassets in Resources */,
-				B1D76A612B9F91B800C8FA8E /* Main.storyboard in Resources */,
+				B1D76A922B9FE63600C8FA8E /* Beneficiaries.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B1D76A6A2B9F91B900C8FA8E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1D76A742B9F91B900C8FA8E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,9 +297,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1D76A5E2B9F91B800C8FA8E /* ViewController.swift in Sources */,
+				B1D76A5E2B9F91B800C8FA8E /* HomeViewController.swift in Sources */,
+				B1D76AAD2BA01C4600C8FA8E /* CustomLabel.swift in Sources */,
 				B1D76A5A2B9F91B800C8FA8E /* AppDelegate.swift in Sources */,
+				B1D76A962B9FE75C00C8FA8E /* MainDataCell.swift in Sources */,
+				B1D76A9F2B9FFD5600C8FA8E /* HomeViewModel.swift in Sources */,
 				B1D76A5C2B9F91B800C8FA8E /* SceneDelegate.swift in Sources */,
+				B1D76AAA2BA0116900C8FA8E /* DataTransformers.swift in Sources */,
+				B1D76A9B2B9FEEAD00C8FA8E /* Beneficiary.swift in Sources */,
+				B1D76AA52BA005E000C8FA8E /* AdditionalInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,16 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1D76A712B9F91B900C8FA8E /* EmpowerCodeChallengeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1D76A722B9F91B900C8FA8E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1D76A7B2B9F91B900C8FA8E /* EmpowerCodeChallengeUITests.swift in Sources */,
-				B1D76A7D2B9F91B900C8FA8E /* EmpowerCodeChallengeUITestsLaunchTests.swift in Sources */,
+				B1D76AB12BA022E800C8FA8E /* AdditionalInformationViewControllerTests.swift in Sources */,
+				B1D76AB32BA02ACF00C8FA8E /* DataTransformersTests.swift in Sources */,
+				B1D76AAF2BA01FD400C8FA8E /* MainDataCellTests.swift in Sources */,
+				B1D76A712B9F91B900C8FA8E /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,22 +328,9 @@
 			target = B1D76A552B9F91B800C8FA8E /* EmpowerCodeChallenge */;
 			targetProxy = B1D76A6D2B9F91B900C8FA8E /* PBXContainerItemProxy */;
 		};
-		B1D76A782B9F91B900C8FA8E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B1D76A552B9F91B800C8FA8E /* EmpowerCodeChallenge */;
-			targetProxy = B1D76A772B9F91B900C8FA8E /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B1D76A5F2B9F91B800C8FA8E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1D76A602B9F91B800C8FA8E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B1D76A642B9F91B900C8FA8E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,7 +473,6 @@
 				INFOPLIST_FILE = EmpowerCodeChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,7 +500,6 @@
 				INFOPLIST_FILE = EmpowerCodeChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -531,42 +555,6 @@
 			};
 			name = Release;
 		};
-		B1D76A872B9F91B900C8FA8E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7J4CZQNAZR;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = phan.mike.EmpowerCodeChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EmpowerCodeChallenge;
-			};
-			name = Debug;
-		};
-		B1D76A882B9F91B900C8FA8E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7J4CZQNAZR;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = phan.mike.EmpowerCodeChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EmpowerCodeChallenge;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -593,15 +581,6 @@
 			buildConfigurations = (
 				B1D76A842B9F91B900C8FA8E /* Debug */,
 				B1D76A852B9F91B900C8FA8E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1D76A862B9F91B900C8FA8E /* Build configuration list for PBXNativeTarget "EmpowerCodeChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1D76A872B9F91B900C8FA8E /* Debug */,
-				B1D76A882B9F91B900C8FA8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
